@@ -25,6 +25,24 @@
         "paths": {
             "@/*": [
                 "./*"
+            ],
+            "@react/*": [
+                "./react-components/*"
+            ],
+            "@utils/*": [
+                "./utils/*"
+            ],
+            "@app/*": [
+                "./app/*"
+            ],
+            "@server/*": [
+                "./server/*"
+            ],
+            "@assets/*": [
+                "./assets/*"
+            ],
+            "@models/*": [
+                "./models/*"
             ]
         }
     },

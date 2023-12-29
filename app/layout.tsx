@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { TopBanner } from '@/react-components/header'
+import { FooterCopyRight } from '@/react-components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,15 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <header>
+                    <TopBanner />
+                </header>
+                {children}
+                <footer>
+                    <FooterCopyRight />
+                </footer>
+            </body>
         </html>
     )
 }
