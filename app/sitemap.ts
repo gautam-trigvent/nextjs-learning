@@ -7,7 +7,7 @@ interface sitemapInterface {
     priority: number,
 }
 
-const baseURL:string = "http://localhost:3000"
+const baseURL:string = "http://localhost:3001"
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticURLs = ["/", "/about", "/contact-us", "/terms-of-service"]
